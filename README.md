@@ -13,7 +13,7 @@ Light Stones Browser, web'de gezinmeye farklı bir yaklaşım araştıran açık
 - URL veya arama terimi girişi
 - Güvenli HTTP/HTTPS adres kontrolü
 - Harici bağlantıları yeni sekmede açma
-- Harici analiz betiği ve hesap gerektirmeyen yalın başlangıç
+- Harici analiz betiği veya hesap gerektirmeyen yalın başlangıç
 - Mimari ve geliştirme yol haritası
 
 ## Çalıştırma
