@@ -45,3 +45,35 @@ footer{max-width:1160px;margin:auto;border-top:1px solid var(--line);padding:24p
 .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media(max-width:700px){.topbar{padding:20px;align-items:flex-start;gap:20px}nav{gap:12px;flex-wrap:wrap;justify-content:flex-end;font-size:10px}.hero{padding:75px 0 55px}.workspace-body{padding:28px;min-height:220px}.orbit{width:115px;height:115px;margin:0}.orbit-core{width:48px;height:48px}.lower{grid-template-columns:1fr;gap:20px;padding:55px 0}.workspace-foot{font-size:8px}}
 @media(max-width:460px){.topbar{flex-direction:column}.brand{font-size:12px}nav{justify-content:flex-start}.workspace-body{align-items:flex-start}.orbit{width:85px;height:85px;flex:none;margin-top:30px}.orbit:before,.orbit:after{inset:10px}.address-form button{padding:13px}.address-form input{font-size:12px}.workspace-head,.workspace-foot{padding:12px;font-size:8px}}
+
+/* Light Trace: local-first evidence notebook */
+.trace-section{padding:30px 0 78px;border-top:1px solid var(--line)}
+.trace-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:28px}
+.trace-heading h2{font-size:clamp(34px,5vw,56px);letter-spacing:-.065em;margin:12px 0 0}.trace-heading h2 em{font-style:normal;color:var(--mint)}
+.trace-heading>p{max-width:390px;color:#9baab5;font-size:12px;line-height:1.8}
+.trace-grid{display:grid;grid-template-columns:minmax(260px,.85fr) minmax(0,1.15fr);gap:18px;align-items:start}
+.trace-form,.trace-library{border:1px solid var(--line);border-radius:16px;background:rgba(17,25,35,.82);padding:22px}
+.trace-form-title{font:10px 'DM Mono',monospace;letter-spacing:.14em;color:var(--mint);margin:0 0 18px}
+.trace-form label{display:block;color:#b6c3cc;font-size:10px;margin:13px 0 7px}
+.trace-form input,.trace-form textarea,.trace-form select{width:100%;border:1px solid var(--line);border-radius:8px;background:#0a1118;color:var(--text);padding:11px 12px;font:11px Manrope,system-ui,sans-serif;outline:none}
+.trace-form input:focus,.trace-form textarea:focus,.trace-form select:focus{border-color:#a8e6d188;box-shadow:0 0 0 3px #a8e6d111}
+.trace-form textarea{resize:vertical;line-height:1.6}.trace-form input::placeholder,.trace-form textarea::placeholder{color:#667784}
+.trace-save{width:100%;margin-top:17px;padding:13px;border:0;border-radius:8px;background:var(--mint);color:#092019;font:700 11px Manrope,sans-serif;cursor:pointer}
+.trace-privacy{font:9px 'DM Mono',monospace;color:#778894;line-height:1.6;margin:12px 0 0}
+.trace-library-head{display:flex;justify-content:space-between;gap:12px;align-items:center}.trace-library-head h3{font-size:21px;letter-spacing:-.04em;margin:7px 0 0}
+.trace-count{font:9px 'DM Mono',monospace;color:var(--mint);border:1px solid #a8e6d133;border-radius:20px;padding:7px 10px;white-space:nowrap}
+.trace-actions{display:flex;gap:8px;margin:18px 0;border-bottom:1px solid var(--line);padding-bottom:16px}
+.trace-utility{background:#17232d;border:1px solid var(--line);color:#c2d0d8;border-radius:7px;padding:8px 11px;font:10px Manrope,sans-serif;cursor:pointer}
+.trace-utility:hover{border-color:#a8e6d177;color:var(--mint)}
+.trace-list{display:grid;gap:10px;max-height:600px;overflow:auto}
+.trace-empty{min-height:180px;display:grid;align-content:center;justify-items:center;text-align:center;color:#8d9ca7}
+.trace-empty>span{font-size:28px;color:var(--mint);margin-bottom:8px}.trace-empty b{font-size:12px;color:#dce6eb}.trace-empty p{font-size:10px;line-height:1.7;max-width:240px}
+.trace-card{border:1px solid var(--line);border-radius:11px;padding:14px;background:#0c141c}
+.trace-card-top{display:flex;justify-content:space-between;gap:10px;align-items:start}.trace-card h4{margin:0;font-size:12px;line-height:1.5;overflow-wrap:anywhere}
+.trace-card a{color:var(--mint);font:9px 'DM Mono',monospace;overflow-wrap:anywhere}
+.trace-relation{font:8px 'DM Mono',monospace;letter-spacing:.08em;color:#a9c9dc;border:1px solid #8fc8e833;border-radius:20px;padding:5px 7px;white-space:nowrap}
+.trace-card p{color:#9eacb7;font-size:10px;line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere}.trace-card .trace-claim{color:#d5e0e6}
+.trace-card-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:12px}
+.trace-date{font:8px 'DM Mono',monospace;color:#71818d}.trace-delete{border:0;background:transparent;color:#c48d8d;font:9px Manrope,sans-serif;cursor:pointer;padding:4px}
+.trace-footnote{font:9px 'DM Mono',monospace;color:#71818d;line-height:1.6;margin:15px 0 0}
+@media(max-width:760px){.trace-heading{display:block}.trace-heading>p{margin-top:15px}.trace-grid{grid-template-columns:1fr}.trace-section{padding-bottom:55px}}
