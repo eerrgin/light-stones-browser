@@ -20,6 +20,10 @@ Light Stones Browser, web'de gezinmeye farklı bir yaklaşım araştıran açık
 
 Depoyu klonlayıp `index.html` dosyasını bir web tarayıcısında açabilirsin. Statik barındırma için GitHub Pages kullanılabilir.
 
+## Light Trace · Işık İzi
+
+Light Trace, araştırma kaynaklarını, kaynak iddialarını ve kişisel yorumları ayrı alanlarda saklayan yerel araştırma defteridir. Kayıtlar varsayılan olarak yalnızca tarayıcının bu siteye ait yerel depolamasında tutulur; JSON olarak dışa aktarılabilir ve tekrar içe alınabilir. Sunucuya otomatik veri gönderimi yapılmaz. Bu özellik doğruluk puanı üretmez; kaynakları eleştirel incelemeye yardımcı olan bir kayıt düzenidir.
+
 ## Mimari
 
 Katmanlar ve araştırma sırası için [ARCHITECTURE.md](ARCHITECTURE.md) dosyasına bak.
