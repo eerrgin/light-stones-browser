@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d12">
+  <meta name="description" content="Light Stones Browser: Ergin Kaplan tarafından tasarlanan özgün, deneysel tarayıcı arayüzü ve açık mimari araştırması.">
+  <meta name="author" content="Ergin Kaplan">
+  <title>Light Stones Browser · Ergin Kaplan</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="src/app.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Light Stones Browser ana sayfa">
+      <span class="brand-mark">✦</span>
+      <span>LIGHT <b>STONES</b><small>EXPERIMENTAL BROWSER PROJECT</small></span>
+    </a>
+    <nav aria-label="Ana menü">
+      <a href="#about">Proje</a>
+      <a href="ARCHITECTURE.md">Mimari</a>
+      <a href="https://github.com/eerrgin/light-stones-browser" target="_blank" rel="noopener noreferrer">Kaynak kod ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow"><span class="pulse"></span> AÇIK ARAŞTIRMA · SÜRÜM 0.1.0</p>
+      <h1>Web'e başka<br><em>bir açıdan</em> bak.</h1>
+      <p class="intro">Light Stones, gezinmeyi yalnızca adres yazıp sayfa açmak olarak görmeyen, özgün bir tarayıcı deneyimi araştırmasıdır.</p>
+
+      <form class="address-form" id="address-form" autocomplete="off">
+        <span class="address-icon" aria-hidden="true">⌕</span>
+        <label class="visually-hidden" for="address">Adres veya arama terimi</label>
+        <input id="address" name="address" type="text" placeholder="Bir adres veya merak ettiğin bir şey yaz…" spellcheck="false" autofocus>
+        <button type="submit">Git <span aria-hidden="true">↗</span></button>
+      </form>
+      <p class="hint">Bir web adresi gir veya DuckDuckGo ile ara. Bu sürüm deneysel bir web arayüzüdür.</p>
+
+      <div class="quick-links" aria-label="Hızlı bağlantılar">
+        <a href="https://duckduckgo.com/" target="_blank" rel="noopener noreferrer"><span>◉</span> DuckDuckGo</a>
+        <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer"><span>⌘</span> MDN</a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><span>⌥</span> GitHub</a>
+      </div>
+    </section>
+
+    <section class="workspace" aria-label="Tarayıcı çalışma alanı">
+      <div class="workspace-head"><span><i></i> LIGHT CORE / READY</span><span>LOCAL SESSION · 001</span></div>
+      <div class="workspace-body">
+        <div>
+          <p class="eyebrow">YENİ OTURUM</p>
+          <h2>Merak ettiğin<br>yerden başla.</h2>
+          <p>Adres çubuğu bu prototipte güvenli biçimde dış tarayıcı sekmesine yönlendirir. Bağımsız görüntüleme motoru henüz geliştirme aşamasında değildir.</p>
+        </div>
+        <div class="orbit" aria-hidden="true"><span class="orbit-core">LS</span><i></i><b></b><small></small></div>
+      </div>
+      <div class="workspace-foot"><span>PROTOTYPE / WEB ENTRY</span><span>NO TRACKING · NO ACCOUNT</span></div>
+    </section>
+
+    <section class="lower" id="about">
+      <article>
+        <p class="eyebrow">01 / YAKLAŞIM</p>
+        <h2>Bir arayüzden<br>fazlası.</h2>
+        <p>Projenin hedefi; gezinme niyetini, gizlilik tercihlerini ve sayfa bağlamını tek bir anlaşılır mimaride ele alan özgün bir tarayıcı altyapısı araştırmaktır.</p>
+      </article>
+      <article>
+        <p class="eyebrow">02 / İLKELER</p>
+        <ul>
+          <li>Özgün tasarım ve kod</li>
+          <li>Şeffaf izinler ve gizlilik</li>
+          <li>Denetlenebilir, küçük adımlar</li>
+          <li>Ölçülebilir performans ve güvenlik</li>
+        </ul>
+      </article>
+      <article>
+        <p class="eyebrow">03 / GELİŞTİRME DURUMU</p>
+        <div class="status-line"><span>Web giriş arayüzü</span><b>Hazır</b></div>
+        <div class="status-line"><span>Mimari taslak</span><b>İlk sürüm</b></div>
+        <div class="status-line"><span>Bağımsız render motoru</span><b>Gelecek araştırma</b></div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <a class="footer-brand" href="./">✦ LIGHT STONES</a>
+    <span>Özgün deneysel tarayıcı projesi</span>
+    <span class="signature">Tasarım ve proje yönü: <b>Ergin Kaplan</b> · © 2026</span>
+  </footer>
+</body>
+</html>
