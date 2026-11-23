@@ -59,6 +59,30 @@
       <div class="workspace-foot"><span>PROTOTYPE / WEB ENTRY</span><span>NO TRACKING · NO ACCOUNT</span></div>
     </section>
 
+
+    <section class="trace-section" id="light-trace" aria-labelledby="trace-title">
+      <div class="trace-heading"><div><p class="eyebrow">04 / LIGHT TRACE · LOCAL-FIRST RESEARCH</p><h2 id="trace-title">Bilginin <em>ışık izi.</em></h2></div><p>Kaynağı, iddiayı ve kendi yorumunu birbirinden ayır. Araştırmanın izini yalnızca kendi cihazında tut.</p></div>
+      <div class="trace-grid">
+        <form class="trace-form" id="trace-form">
+          <p class="trace-form-title">YENİ BİR İZ OLUŞTUR</p>
+          <label for="trace-title-input">Kaynağın adı</label><input id="trace-title-input" name="title" maxlength="120" placeholder="Örn. Araştırma makalesi" required>
+          <label for="trace-url">Kaynak bağlantısı</label><input id="trace-url" name="url" type="url" inputmode="url" placeholder="https://…" required>
+          <label for="trace-claim">Kaynağın iddiası</label><textarea id="trace-claim" name="claim" maxlength="1000" rows="3" placeholder="Kaynak ne söylüyor? Kendi yorumunu henüz ekleme." required></textarea>
+          <label for="trace-note">Benim yorumum / açık soru</label><textarea id="trace-note" name="note" maxlength="1000" rows="3" placeholder="Bu iddiadan ne anladın? Neyi henüz bilmiyorsun?"></textarea>
+          <label for="trace-relation">Diğer kaynaklarla ilişkisi</label>
+          <select id="trace-relation" name="relation"><option value="new">Yeni iz</option><option value="supports">Destekliyor</option><option value="challenges">Sorguluyor / çürütüyor</option><option value="extends">Genişletiyor</option></select>
+          <button type="submit" class="trace-save">İzi kaydet <span aria-hidden="true">↗</span></button>
+          <p class="trace-privacy">⌑ Yalnızca bu tarayıcı profilinde saklanır. Sunucuya gönderilmez.</p>
+        </form>
+        <div class="trace-library">
+          <div class="trace-library-head"><div><span class="eyebrow">KİŞİSEL ARAŞTIRMA HARİTASI</span><h3>İz koleksiyonun</h3></div><span class="trace-count" id="trace-count">0 İZ</span></div>
+          <div class="trace-actions"><button type="button" id="trace-export" class="trace-utility">Dışa aktar ↓</button><button type="button" id="trace-import-button" class="trace-utility">İçe aktar ↑</button><input type="file" id="trace-import" accept="application/json,.json" hidden></div>
+          <div id="trace-list" class="trace-list" aria-live="polite"><div class="trace-empty"><span>✧</span><b>Henüz bir iz yok.</b><p>İlk kaynağını ekle. Bilginin haritası burada oluşmaya başlayacak.</p></div></div>
+          <p class="trace-footnote" id="trace-status" role="status">Veriler bu cihazdaki tarayıcı depolamasında tutulur.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="lower" id="about">
       <article>
         <p class="eyebrow">01 / YAKLAŞIM</p>
