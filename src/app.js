@@ -35,7 +35,7 @@
   var storageKey="light-stones.trace.v1";
   var relationLabels={new:"YENİ İZ",supports:"DESTEKLİYOR",challenges:"SORGULUYOR",extends:"GENİŞLETİYOR"};
   function safeSourceUrl(value){try{var u=new URL(value);return u.protocol==="https:"||u.protocol==="http:";}catch(e){return false;}}
-  function validTrace(item){return !!item&&typeof item==="object"&&typeof item.title==="string"&&typeof item.claim==="string"&&typeof item.url==="string"&&safeSourceUrl(item.url)&&["new","supports","challenges","extends"].indexOf(item.relation)!==-1;}
+  function validTrace(item){return !!item&&typeof item==="object"&&typeof item.id==="string"&&item.id.length<=120&&typeof item.title==="string"&&item.title.length<=120&&typeof item.claim==="string"&&item.claim.length<=1000&&typeof item.note==="string"&&item.note.length<=1000&&typeof item.url==="string"&&safeSourceUrl(item.url)&&typeof item.createdAt==="string"&&["new","supports","challenges","extends"].indexOf(item.relation)!==-1;}
   function loadTraces(){try{var raw=localStorage.getItem(storageKey);var parsed=raw?JSON.parse(raw):[];return Array.isArray(parsed)?parsed.filter(validTrace).slice(0,500):[];}catch(e){return [];}}
   var traces=loadTraces();
   function persistTraces(){try{localStorage.setItem(storageKey,JSON.stringify(traces));traceStatus.textContent="Kaydedildi. Bu koleksiyon yalnızca bu tarayıcı profilinde durur.";return true;}catch(e){traceStatus.textContent="Tarayıcı depolaması kullanılamıyor veya dolu. Verilerini dışa aktarmayı dene.";return false;}}
