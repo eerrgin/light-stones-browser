@@ -18,10 +18,17 @@ Bu depo şu anda bir web giriş arayüzü içerir. Henüz HTML/CSS/JavaScript'i 
 5. **Light Shield:** site izolasyonu, izin modeli, güvenli varsayılanlar ve tehdit azaltımı.
 6. **Light Memory:** yalnızca açık izinle saklanan yerel tercihler ve kullanıcı tarafından yönetilen oturum verileri.
 
+## Light Trace: kaynak ve yorum ayrımı
+
+Light Trace, araştırma kaydını kaynak kimliği, kaynağın iddiası, kullanıcının yorumu/açık sorusu, kaynaklar arası ilişki ve kayıt zamanı olarak ayırır. Kayıtlar sürümlenmiş JSON biçiminde dışa/içe aktarılır. İlk sürümde depolama aynı origin altındaki tarayıcı `localStorage` alanıdır; cihazlar arası eşitleme sağlamaz ve kullanıcı site verilerini temizlerse kayıtlar kaybolabilir. Dışa aktarma yedekleme yoludur.
+
+İçe aktarma sırasında yalnızca JSON yapısı ve HTTP/HTTPS kaynak adresleri kabul edilir. Arayüz metinleri DOM `textContent` ile oluşturulur; içe alınan başlık veya notlar HTML olarak çalıştırılmaz. Bu özellik kaynakların doğruluğunu otomatik puanlamaz ve kanıtın yerine geçmez.
+
 ## Geliştirme sırası
 
 - [x] İlk web giriş arayüzü
 - [x] Proje ilkeleri ve mimari taslak
+- [x] Yerel araştırma izi prototipi (Light Trace)
 - [ ] URL ve origin güvenlik modeli
 - [ ] Tehdit modeli ve gizlilik incelemesi
 - [ ] Belge ağacı ve HTML ayrıştırma araştırması
